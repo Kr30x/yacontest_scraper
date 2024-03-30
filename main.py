@@ -148,7 +148,7 @@ def get_data(prefix):
         temp = f.readlines()
         ans['username'] = temp[0]
         ans['password'] = temp[1]
-    ans['table'] = gc.open(f"{prefix}_Алгосы")
+    ans['table'] = gc.open(f"{prefix}_generate")
     group = []
     with codecs.open(f'{prefix}.txt', "r", "utf_8_sig") as f:
         for line in f.readlines():
@@ -159,7 +159,7 @@ def get_data(prefix):
 
 
 # ALL INPUTS
-groups_to_analyse = ['238']
+groups_to_analyse = []
 
 # Here starts the code
 
